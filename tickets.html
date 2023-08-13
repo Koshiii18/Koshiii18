@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = 450">
+    <title>www.Shell squad.com</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tickets.css">
+    <link rel="stylesheet" href="tickets.js">
+        
+       
+
+</head>
+<body>
+    <header class="header">
+        <a href="main.html" class="logo"> <i class="fas fa-paw"></i> Shell Squad</a>
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="hikkaduwa.html">Hikkaduwa Turtle hatchery</a>
+            <a href="types.html">Turtle types</a>
+            <a href="threats.html">Threats</a>
+            <a href="turtle.html">turtle hatcheries</a>
+            <a href="donate.html">Shop and Donate</a>
+    </header>
+    </header>
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1>Ticket Bookings</h1>
+        </div>
+    </div>
+    <form form class="form">
+    <div class="wrapper">
+        <div class="title">
+          Hikkaduwa Tours
+        </div>
+        <div class="form">
+           <h2>TICKET TYPE</h2>
+           <div class="inputfield">
+            <label for="adultnum">SL Adult</label>
+            <input type="number" name="num" class="input" min="1" required id="adultnum" onblur="costCalculation();"> 
+         </div>
+         <div class="inputfield">
+          <label for="childnum">SL Child (4-13 years)</label>
+          <input type="number" name="num" class="input" min="1" required id="childnum" onblur="costCalculation();"> 
+       </div>
+       <div class="inputfield">
+        <label for="fadult">Foreigner Adult</label>
+        <input type="number" name="num" class="input" min="1"  id="fadult" onblur="costCalculation();"> 
+     </div>
+     <div class="inputfield">
+      <label for="fchild">Foreigner Child(4-13 years)</label>
+      <input type="number" name="num" class="input" min="1" required id="fchild" onblur="costCalculation();"> 
+   </div>
+   <div class="inputfield">
+    <label>Infant Child(under for 4 years)</label>
+    <div class="free">FREE</div>
+ </div>
+           <h2>DATES</h2>
+           <div class="inputfield">
+            <label for="date">When are you coming?</label>
+            <input type="Date" class="input" required="required" id="date">
+         </div>
+         <h2>DURATION</h2>
+         <div class="inputfield">
+          <label>Tour Duration</label>
+          <div class="custom_select">
+            <select id="duration" onchange="costCalculation();">
+              
+              <option value="0">3 Hours</option>
+              <option value="1">1/2 Day</option>
+              <option value="2">Full Day</option>
+            </select>
+          </div>
+          
+         
+        </div>
+       
+    </div>
+    <p id="Output"></p>
+  </form>	
+  <div>
+    <h2>Checkout</h2>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>Total</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+    
+    <div class="booknow">
+      <button type="button" class="continuebtn"><a href="Details.html">continue</a></button>
+    </div>
+  </div>
+  <!-- Add this div to your HTML -->
+<div class="summary-table" id="summaryTable"></div>
+  
+<script src="tickets.js"></script>   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

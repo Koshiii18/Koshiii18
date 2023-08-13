@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: greenyellow;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.donation-amounts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.donation-amounts label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.donation-amounts input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.donation-message {
+    margin: 20px 0;
+}
+
+.donate-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: greenyellow;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.donate-btn:hover {
+    background-color:greenyellow;
+}
+
+.turtle-image {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
